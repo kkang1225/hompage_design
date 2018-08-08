@@ -1,0 +1,15 @@
+@charset "utf-8";
+*{box-sizing:border-box;}
+#main_header{width:100%;}
+#main_gnb_wrap{width:100%;height:30px;border-bottom:1px solid #ddd;}
+#main_gnb{width:980px;margin:0 auto;}
+#main_gnb:after{content:"";display:block;clear:both;}
+#gnb{float:right;padding-top:5px;}
+#gnb ul:after{content:"";display:block;clear:both;}
+#gnb li{float:left;border-left:1px solid #ccc;height:20px;}
+#gnb li:first-child{border-left:none;}
+#gnb a{display:block;padding:0 10px;height:20px;line-height:20px;}
+#gnb a:hover{color:skyblue;}
+#logo_wrap{width:980px;height:60px;margin:0 auto;position: relative;padding:7px;}
+#logo_wrap h1{width:250px;text-align:center;margin:0 auto;}
+.toggle{position:absolute;right:0;top:7px;}
