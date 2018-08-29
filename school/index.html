@@ -21,6 +21,7 @@
 
 			$('.prev').click(function(){
 				myslider.goToPrevSlide();
+				return false;
 			});
 			$('.next').click(function(){
 				myslider.goToNextSlide();
@@ -153,10 +154,10 @@
 						</div>
 						<p>한국 대학교는<br>2017학년도 신입생<br>입학식을 3월2일(목)<br>본교 종합체육관...</p>
 						<div class="icon">
-							<img src="./images/facebook.jpg" alt="facebook_icon">
-							<img src="./images/twitter.jpg" alt="twitter_icon">
-							<img src="./images/google.jpg" alt="google_icon">
-							<img src="./images/youtube.jpg" alt="youtube_icon">
+							<a href="#"><img src="./images/facebook.jpg" alt="facebook_icon"></a>
+							<a href="#"><img src="./images/twitter.jpg" alt="twitter_icon"></a>
+							<a href="#"><img src="./images/google.jpg" alt="google_icon"></a>
+							<a href="#"><img src="./images/youtube.jpg" alt="youtube_icon"></a>
 						</div>
 					</div>
 					<div id="tour">
@@ -177,6 +178,13 @@
 							<li><img src="./images/학생.jpg" alt="학생3"></li>
 							<li><img src="./images/학생.jpg" alt="학생4"></li>
 						</ul>
+						<p>2017년 신·편입생2차 모집</p>
+						<h2>2017.7.7 ~ 7.10</h2>
+						<div id="before">
+							<div class="box03">
+								<a href="#">입학사전예약 ▶</a>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div id="schedule">
@@ -194,13 +202,31 @@
 	<footer>
 		<div id="footer_wrap">
 			<div id="main_footer">
-				<ul>
+				<ul class="introduce">
 					<li><a href="#">회사소개</a></li>
 					<li><a href="#">한국 대학교</a></li>
 					<li><a href="#">개인정보취급방침</a></li>
 					<li><a href="#">이용정책</a></li>
 					<li><a href="#">입점/제휴문의 및 광고</a></li>
 					<li><a href="#">이메일 무단수집거부</a></li>
+				</ul>
+				<ul class="info">
+					<li><a href="#">대표자:홍길동</a></li>
+					<li><a href="#">서울특별시 구로구 구로로 300(구로동 6가)</a></li>
+					<li><a href="#">사업자등록번호:123-56-7890234</a></li>
+				</ul>
+				<ul class="info">
+					<li><a href="#">통신판매업 신고번호:제1234-서울 구로구-1004호</a></li>
+					<li><a href="#">개인정보관리 책입자:홍길동</a></li>
+					<li><a href="#">소비자피해보상보험</a></li>
+				</ul>
+				<ul class="info">
+					<li><a href="#">고객센터:1234-5678</a></li>
+					<li><a href="#">FAX:02-1234-5678</a></li>
+					<li><a href="#">HANGUKUNIVERSITY@HANGUK.COM</a></li>
+				</ul>
+				<ul class="info">
+					<li><a href="#">COPYRIGHT ⓒHANGUK.ALL.RIGHTS RESERVED.</a></li>
 				</ul>
 			</div>
 		</div>
