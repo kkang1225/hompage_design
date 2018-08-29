@@ -1,15 +1,15 @@
 @charset "utf-8";
 *{box-sizing:border-box;}
-body{background:url(../images/background.jpg);}
+body{background:url(../images/background.jpg) no-repeat;}
 #container_wrap{width:100%;}
-#main_header{width:100%;background:#0044af;}
+#main_header{width:100%;margin:0 auto;background:#0044af;}
 #main_gnb_wrap{width:1200px;height:40px;margin:0 auto;}
 #main_gnb{position:relative;}
 #main_gnb .left:after{content:"";display:block;clear:both;}
 #main_gnb .left{position:absolute;left:0;top:0;}
-#main_gnb .left li{float:left;width:125px;background:#00163b;margin-right:5px;padding:0 30px;}
-#main_gnb .left a{display:block;color:#fff;}
-#main_gnb .left li:hover{background:#fff;color:#787878;cursor:pointer;} 
+#main_gnb .left li{float:left;background:#00163b;margin-right:5px;}
+#main_gnb .left a{display:block;color:#fff;width:125px;}
+#main_gnb .left li:hover{background:#fff;cursor:pointer;} 
 #main_gnb .left a:hover{background:#fff;color:#787878;}
 
 #main_gnb .right:after{content:"";display:block;clear:both;}
@@ -22,7 +22,7 @@ body{background:url(../images/background.jpg);}
 #main_gnb .right a:hover{color:powderblue;}
 #main_gnb .right a, #main_gnb .left a{display:block;text-align:center;line-height:40px;}
 
-#header_wrapper{width:100%;height:120px;background-color:#fff;}
+#header_wrapper{width:100%;height:120px;margin:0 auto;background-color:#fff;}
 #header_wrap{width:1200px;height:120px;position:relative;margin:0 auto;background-color:#fff;}
 #header:after{content:"";display:block;clear:both;}
 #header{width:300px;position:absolute;}
@@ -52,7 +52,7 @@ body{background:url(../images/background.jpg);}
 
 /*#slide_wrap:after{content:"";display:block;clear:both;}
 #slide_wrap .slide01{float:left;}*/
-.bx-wrapper{box-shadow:none;border:none;}
+.bx-wrapper{box-shadow:none;border:none;overflow:hidden;}
 #slide_wrap .bx-pager{bottom:60px;right:70px;}
 #slide_wrap .bx-pager a.active{background:#1651b7;}
 #slide_wrap2 .bx-pager{top:-10px;right:-400px;}
@@ -122,9 +122,9 @@ section{width:1200px;margin:0 auto;}
 #schedule img{float:right;}
 #schedule .second{position:absolute;bottom:0;right:0;}
 
-footer{height:190px;background:#fff;margin-top:100px;}
+footer{width:100%;height:190px;margin:0 auto;background:#fff;margin-top:100px;}
 #footer_wrap{width:1200px;margin:0 auto;}
-#main_footer{width:100%;margin-left:200px;}
+#main_footer{margin-left:200px;}
 #main_footer ul{overflow:hidden;}
 #main_footer li{float:left;}
 .introduce{}
