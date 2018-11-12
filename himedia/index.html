@@ -4,8 +4,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>하이미디어</title>
+	<script src="../../js/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="./CSS/reset.css">
 	<link rel="stylesheet" href="./CSS/style.css">
+	<script>
+		$(function(){
+
+			var i;
+			
+			$("#lnb>ul>li").mouseenter(function(){
+				i = $(this).index();
+
+				$("#lnb>ul>li>a").eq(i).addClass("active");
+				$("#lnb>ul>li>ul").eq(i).stop().slideDown();
+				console.log($(this));
+			}).
+			mouseleave(function(){
+				$("#lnb>ul>li>a").removeClass("active");
+				$("#lnb ul.depth2").hide();
+			});
+		});
+	</script>
 </head>
 <body>
 	<header id="main_header">
@@ -29,12 +48,60 @@
 		<div id="main_lnb">
 			<nav id="lnb">
 				<ul class="clearfix">
-					<li><a href="#">회사소개</a></li>
-					<li><a href="#">제품소개</a></li>
-					<li><a href="#">사업영역</a></li>
-					<li><a href="#">고객센터</a></li>
-					<li><a href="#">사회공헌</a></li>
-					<li><a href="#">인재채용</a></li>
+					<li>
+						<a href="#">회사소개</a>
+						<ul class="depth2">
+							<li><a href="#">menu0</a></li>
+							<li><a href="#">menu2</a></li>
+							<li><a href="#">menu3</a></li>
+							<li><a href="#">menu4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">제품소개</a>
+						<ul class="depth2">
+							<li><a href="#">menu1</a></li>
+							<li><a href="#">menu2</a></li>
+							<li><a href="#">menu3</a></li>
+							<li><a href="#">menu4</a></li>
+						</ul>	
+					</li>
+					<li>
+						<a href="#">사업영역</a>
+						<ul class="depth2">
+							<li><a href="#">menu2</a></li>
+							<li><a href="#">menu2</a></li>
+							<li><a href="#">menu3</a></li>
+							<li><a href="#">menu4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">고객센터</a>
+						<ul class="depth2">
+								<li><a href="#">menu3</a></li>
+								<li><a href="#">menu2</a></li>
+								<li><a href="#">menu3</a></li>
+								<li><a href="#">menu4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">사회공헌</a>
+						<ul class="depth2">
+							<li><a href="#">menu4</a></li>
+							<li><a href="#">menu2</a></li>
+							<li><a href="#">menu3</a></li>
+							<li><a href="#">menu4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">인재채용</a>
+						<ul class="depth2">
+							<li><a href="#">menu5</a></li>
+							<li><a href="#">menu2</a></li>
+							<li><a href="#">menu3</a></li>
+							<li><a href="#">menu4</a></li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
 		</div>
